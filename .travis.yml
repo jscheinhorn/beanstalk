@@ -25,7 +25,7 @@ deploy:
   provider: heroku
   app: beanstalk-sdc # see README
   api_key:
-    secure: 6d87b20e-0946-4d73-b4b8-ded2ae94978b # see README
+    secure: "AdSq3lwM4kvghAkW6IsAneCHwmzAwyiD8iLrypbLvqMslt5oBop9LB8LTuQeUc9CaTsl4qQYmdZrUc43RwE4mmhCy9f7bhsNNDWYPNg8Es5SImkC/sTQ+hhznEJTP64Fr3UeZPrpQBFyJArKLXa8MaMmXeDQ3kEgNQMXKdeOpW7YdOocU3qc6tjYFeeDDJ96AEHzQcBSKUu5JO8HIgymdvXMu22lN9RszkwWd/Qqmo30ybF7LRQfNl2iq4YRlZeAdDM8L1h8WpXy5xWAsIchP33yQv9kBYDt5CRZGaSqfLPloqWZl/BHvjjIrpiUJKYvCv5/il6YBAV32r8ukLfMhcqw3HuLgL4afikdTwQgBKCD4xCrjJgmUHHGAB/SnrrAUF5RyeA+S0u593SWVO2pF7F1/VEvh+m6ZnQZBqGrWhdKnTbk46xRsWR5cPhKYwr/380v3rmFJGr54hKZMTTZy6fMYEC7jQC/Rhut6TL0SCur0JpUXYQgRDyoPhZJuL1ohPqMKEVcue7wIpwg+aPHyM+sP29Mm3eOxgp6nEEAgmn9MFeWtuJ4xM6PyypkflsrjQt9aKV/shbjFNGIteLEPkKFcJE80e90EOCAe/BZ5d8F/+1Y+WFVR9TgOVhvPVVTxd+bBvDjXfP9YP89KDi5UlvS/eBEKmo6WE8GsUZqIcM=" # see README
 
 #     $ heroku authorizations:create
 # Creating OAuth Authorization... done
