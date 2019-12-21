@@ -19,10 +19,19 @@ script:
   - npm run build-client # make the bundle
 
 # before_deploy:
-#   - rm -rf node_modules # omit from the tarball, since we skip cleanup
-# deploy:
-#   skip_cleanup: true # prevents travis from deleting the build
-#   provider: heroku
-#   app: YOUR-HEROKU-APP-NAME-HERE # see README
-#   api_key:
-#     secure: YOUR-***ENCRYPTED***-API-KEY-HERE # see README
+  - rm -rf node_modules # omit from the tarball, since we skip cleanup
+deploy:
+  skip_cleanup: true # prevents travis from deleting the build
+  provider: heroku
+  app: beanstalk-sdc # see README
+  api_key:
+    secure: 6d87b20e-0946-4d73-b4b8-ded2ae94978b # see README
+
+#     $ heroku authorizations:create
+# Creating OAuth Authorization... done
+# Client:      <none>
+# ID:          91cfbce9-796b-41a9-ae0e-3687a63d6771
+# Description: Long-lived user authorization
+# Scope:       global
+# Token:       6d87b20e-0946-4d73-b4b8-ded2ae94978b
+# Updated at:  Sat Dec 21 2019 14:46:38 GMT-0500 (Eastern Standard Time) (less than a minute ago)
