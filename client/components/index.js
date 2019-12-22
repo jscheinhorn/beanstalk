@@ -6,3 +6,4 @@
 export {default as Navbar} from './navbar'
 export {default as Welcome} from './Welcome'
 export {default as Team} from './Team'
+export {default as Problem} from './Problem'

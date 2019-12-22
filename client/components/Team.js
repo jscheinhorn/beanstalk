@@ -21,7 +21,7 @@ const Team = () => (
               </div>
             </div>
             <div className="content">
-              E-mail: <a>phonarmandi@ ccny.cuny.edu</a>
+              E-mail: <a>phonarmandi@ccny.cuny.edu</a>
               <br />
             </div>
           </div>
