@@ -40,21 +40,27 @@ const Navbar = ({handleClick, isLoggedIn}) => (
           className="navbar-start navbar-menu is-active"
           style={{padding: '0px 20px 0px 20px'}}
         >
+          <Link to="/" className="navbar-item">
+            Home
+          </Link>
           <Link to="/team" className="navbar-item">
             Team
           </Link>
           <Link to="/problem" className="navbar-item">
             Design Problem
           </Link>
-          <Link to="/diagram" className="navbar-item">
+          <a
+            href="https://drive.google.com/file/d/1uG3iOh1xv21Cz-fBXyiR0JsdK2Rd2TaP/view?usp=sharing"
+            className="navbar-item"
+          >
             Functional Diagram
-          </Link>
-          <Link to="/prototypes" className="navbar-item">
+          </a>
+          <a
+            href="https://drive.google.com/drive/folders/1oC_K9_vP47dr5MKDWvt0CR1uhDghOBCk"
+            className="navbar-item"
+          >
             Prototypes
-          </Link>
-          <Link to="/schedule" className="navbar-item">
-            Schedule
-          </Link>
+          </a>
           <Link to="/resources" className="navbar-item">
             Resources
           </Link>
