@@ -6,24 +6,61 @@ import {logout} from '../store'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
-    <h1>BEANSTALK</h1>
-    <nav>
-      {isLoggedIn ? (
-        <div>
-          {/* The navbar will show these links after you log in */}
-          <Link to="/home">Home</Link>
-          <a href="#" onClick={handleClick}>
-            Logout
-          </a>
+    <div className="block">
+      <section className="hero is-primary">
+        <div className="hero-body" style={{padding: '30px'}}>
+          <div className="container">
+            <div className="columns">
+              <div className="column is-three-quarters">
+                <h1 className="title">
+                  Team Beanstalk
+                  <h2 className="subtitle">Senior Design Project</h2>
+                </h1>
+                <h2 className="subtitle">
+                  ASME E-Fest Student Design Competition
+                </h2>
+              </div>
+              <div className="column">
+                <figure className="image is-3x1">
+                  <img
+                    className="has-ratio is-pulled-right"
+                    style={{width: 140, 'padding-top': 10}}
+                    src="https://www.ccny.cuny.edu/sites/default/files/CCNYlogo_FlushRight_digital.jpg"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
-      ) : (
-        <div>
-          {/* The navbar will show these links before you log in */}
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Sign Up</Link>
+      </section>
+    </div>
+    <div className="block">
+      <nav className="nav">
+        <div
+          className="navbar-start navbar-menu is-active"
+          style={{padding: '0px 20px 0px 20px'}}
+        >
+          <Link to="/team" className="navbar-item">
+            Team
+          </Link>
+          <Link to="/problem" className="navbar-item">
+            Design Problem
+          </Link>
+          <Link to="/diagram" className="navbar-item">
+            Functional Diagram
+          </Link>
+          <Link to="/prototypes" className="navbar-item">
+            Prototypes
+          </Link>
+          <Link to="/schedule" className="navbar-item">
+            Schedule
+          </Link>
+          <Link to="/resources" className="navbar-item">
+            Resources
+          </Link>
         </div>
-      )}
-    </nav>
+      </nav>
+    </div>
     <hr />
   </div>
 )
