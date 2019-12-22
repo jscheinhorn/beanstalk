@@ -2,15 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {withRouter, Route, Switch} from 'react-router-dom'
 import PropTypes from 'prop-types'
-import {
-  Welcome,
-  Team,
-  Problem,
-  Diagram,
-  Prototypes,
-  Schedule,
-  Resources
-} from './components'
+import {Welcome, Team, Problem, Prototypes, Resources} from './components'
 import {me} from './store'
 
 /**
@@ -29,9 +21,7 @@ class Routes extends Component {
         {/* Routes placed here are available to all visitors */}
         <Route path="/team" component={Team} />
         <Route path="/problem" component={Problem} />
-        <Route path="/diagram" component={Diagram} />
         <Route path="/prototypes" component={Prototypes} />
-        <Route path="/schedule" component={Schedule} />
         <Route path="/resources" component={Resources} />
         <Route path="/" component={Welcome} />
       </Switch>
